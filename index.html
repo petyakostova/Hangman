@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Petya | Hangman | CG JavaScript Project">
+    <meta name="keywords" content="Hangman, Game, JavaScript, jQuery, HTML, CSS">
+    <meta name="author" content="Petya Kostova">
+
+    <title>Hangman</title>
+
+    <link rel="shortcut icon" href="images/fav/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <header class="start-game">
+            <button id="start-button">START</button>
+
+            <div id="picture">
+                <img src="images/hangman.png" alt="Hangman-Picture">
+            </div>
+        </header>
+
+        <section class="playground">
+            <article id="word"></article>
+
+            <article class="centered">
+                <article id="letters"></article>
+
+                <article class="hangman">
+                    <div class="basis"></div>
+                    <div class="gibbet"></div>
+                    <div class="rope"></div>
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="limbs hands"></div>
+                    <div class="limbs legs"></div>
+                </article>
+            </article>
+
+            <aside id="new-game">
+                <p id="message"></p>
+                <p>New game?</p>
+                <div id="answer">
+                    <button id="yes">YES</button>
+                    <button id="no">NO</button>
+                </div>
+            </aside>
+        </section>
+
+        <footer id="end-game">Thank You for playing!</footer>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
